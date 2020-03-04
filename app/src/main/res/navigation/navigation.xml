@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.d3if0126.bmi.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_kurusFragment"
+            app:destination="@id/kurusFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_idealFragment"
+            app:destination="@id/idealFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_gemukFragment"
+            app:destination="@id/gemukFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.d3if0126.bmi.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/gemukFragment"
+        android:name="org.d3if0126.bmi.GemukFragment"
+        android:label="fragment_gemuk"
+        tools:layout="@layout/fragment_gemuk" />
+    <fragment
+        android:id="@+id/idealFragment"
+        android:name="org.d3if0126.bmi.IdealFragment"
+        android:label="fragment_ideal"
+        tools:layout="@layout/fragment_ideal" />
+    <fragment
+        android:id="@+id/kurusFragment"
+        android:name="org.d3if0126.bmi.KurusFragment"
+        android:label="fragment_kurus"
+        tools:layout="@layout/fragment_kurus" />
+</navigation>
